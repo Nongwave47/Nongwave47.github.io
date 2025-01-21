@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="style.css"> <!-- ลิงก์ไปยังไฟล์ CSS -->
+    <style>
+        /* CSS สำหรับการจัดตำแหน่งปุ่ม Logout */
+        .logout-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .logout-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to เว็บของกู 5555</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="league-standings.html">Standing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Home Section</h2>
+        <p>This is the homepage of my first website!</p>
+        <button onclick="showAlert()">Click Me</button>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>About my personal preferences</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Facebook : Chusak Phetyoi </p>
+        <p>IG : wave_chusak_2004 </p>
+        <p>Email: choosakpetyoi.10122004@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My First Website</p>
+    </footer>
+
+    <!-- ปุ่ม Logout -->
+    <button class="logout-btn" onclick="logout()">Logout</button>
+
+    <script src="script.js"></script> <!-- ลิงก์ไปยังไฟล์ JavaScript -->
+    
+    <script>
+        // ฟังก์ชัน logout ที่จะนำผู้ใช้ไปยังหน้า login.html
+        function logout() {
+            window.location.href = 'login.html'; // เปลี่ยนหน้าไปยัง login.html
+        }
+
+        // ฟังก์ชันตัวอย่างสำหรับปุ่ม Click Me
+        function showAlert() {
+            alert('Hello! You clicked the button!');
+        }
+    </script>
+</body>
+</html>
